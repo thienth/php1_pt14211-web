@@ -44,7 +44,7 @@ var_dump($arr3);
 ?>
 
 <ul>
-    <?php foreach ($arr3 as $key => $value) { ?>
-        <li><?php echo $key ?> - <?php echo $value ?></li>
-    <?php } ?>
+    <?php foreach ($arr3 as $key => $value): ?>
+        <li><?= $key ?> - <?= $value ?></li>
+    <?php endforeach ?>
 </ul>
