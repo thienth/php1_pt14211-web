@@ -32,11 +32,13 @@ $arr = [
 </tr>
 <?php
     foreach ($arr as $key => $value) {
-        echo '<tr>';
-        foreach ($value as $key1 => $value1) {
-            echo '<td>' . $value1 . '</td>';
-        }
-        echo '</tr>';
+
+        var_dump($value);
+        // echo '<tr>';
+        // foreach ($value as $key1 => $value1) {
+        //     echo '<td>' . $value1 . '</td>';
+        // }
+        // echo '</tr>';
     }
 ?>
 </table>
