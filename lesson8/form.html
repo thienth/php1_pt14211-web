@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form action="show-data.php" method="GET">
+        <div>
+            <label for="">Tên sinh viên</label>
+            <input type="text" name="student_name">
+        </div>
+        <div>
+            <label for="">Tỉnh</label>
+            <select name="city" id="">
+                <option value="hn">Hà nội</option>
+                <option value="hna">Hà nam</option>
+                <option value="hp">Hải phòng</option>
+                <option value="th">Thanh Hóa</option>
+                <option value="na">Nghệ An</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Địa chỉ</label>
+            <input type="text" name="hometown">
+        </div>
+        <div>
+            <label for="">Giới thiệu</label>
+            <textarea name="detail" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
