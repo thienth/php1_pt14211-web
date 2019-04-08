@@ -7,7 +7,7 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="show-data.php" method="GET">
+    <form action="show-data.php" method="POST" enctype="multipart/form-data">
         <div>
             <label for="">Tên sinh viên</label>
             <input type="text" name="student_name">
@@ -21,6 +21,32 @@
                 <option value="th">Thanh Hóa</option>
                 <option value="na">Nghệ An</option>
             </select>
+        </div>
+        <div>
+            <label for="">Ảnh đại diện</label>
+            <input type="file" name="avatar">
+        </div>
+        <div>
+            <label for="">Đã lập gia đình</label>
+            <br>
+            <input type="radio" name="family_status" value="1"> độc thân
+            <br>
+            <input type="radio" checked name="family_status" value="2">  Đã đăng ký
+            <br>
+            <input type="radio" name="family_status" value="3"> Đã cưới
+            <br>
+            <input type="radio" name="family_status" value="4"> đã có con
+            <br>
+            <input type="radio" name="family_status" value="5"> Góa
+        </div>
+        <div>
+            <label for="">Sở thích</label>
+            <br>
+            <input type="checkbox" name="favorite[]" value="xp"> Xem phim
+            <input type="checkbox" name="favorite[]" value="dl"> Du lịch
+            <input type="checkbox" name="favorite[]" value="h"> Học
+            <input type="checkbox" name="favorite[]" value="football"> Đá bóng
+            <input type="checkbox" name="favorite[]" value="eat"> Ăn
         </div>
         <div>
             <label for="">Địa chỉ</label>
