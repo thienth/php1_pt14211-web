@@ -25,14 +25,14 @@ $result = queryExecute($sql, true);
     <?php foreach ($result as $key => $value):?>
         <tr>
             <td><?= $value['id']?></td>
-            <td><?= $value['name']?></td>
+            <td><?= ucwords($value['name']) ?></td>
             <td><?= $value['factor']?></td>
             <td><?= $value['class_name']?></td>
             <td><?= $value['student_code']?></td>
             <td><?= $value['avg_score']?></td>
             <td><?= $value['address']?></td>
             <td>
-                <a href="edit.php?id=<?= $value['id']?>">Sửa</a>
+                <a href="edit.php?id=<?= $value['id'] ?>">Sửa</a>
                 <a href="javascript:;" url="remove.php?id=<?= $value['id']?>" onclick="return confirmDelete(this)">Xóa</a>
             </td>
         </tr>
