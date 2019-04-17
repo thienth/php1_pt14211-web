@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(isset($_SESSION['auth']) == false || $_SESSION['auth'] == null){
+    header('location: login.php');
+    die;
+}
+
 /**
  * sinh ra 1 giao dien 
  * 1. giup nguoi dung sua thong tin cũ của students

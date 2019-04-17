@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+if(isset($_SESSION['auth']) == false || $_SESSION['auth'] == null){
+    header('location: login.php');
+    die;
+}
+
 require_once "./db.php";
 
 // 1. thu thập data từ form
