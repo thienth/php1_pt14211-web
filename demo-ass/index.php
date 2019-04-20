@@ -3,7 +3,6 @@ session_start();
 require_once "./db.php";
 $sql = "select * from students";
 $result = queryExecute($sql, true);
-
 ?>
 
 <?php if(isset($_SESSION['auth']) && $_SESSION['auth'] != null): ?>
